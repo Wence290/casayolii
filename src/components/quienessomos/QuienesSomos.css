@@ -1,0 +1,46 @@
+.quienes-somos {
+  min-height: 80vh;
+  background-color: #fbfe73;
+  color: #a82e5f;
+
+  padding: 100px 8%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.etiqueta {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.quienes-somos h2 {
+  font-size: clamp(45px, 6vw, 80px);
+  margin: 0 0 30px;
+  line-height: 1;
+}
+
+.descripcion {
+  max-width: 550px;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.quienes-imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quienes-imagen img {
+  width: 100%;
+  max-width: 500px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}

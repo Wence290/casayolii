@@ -1,0 +1,49 @@
+.inicio {
+  min-height: 100vh;
+  background-color: #a82e5f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 120px 20px 60px;
+}
+
+.inicio-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circulo-logo {
+  width: 110px;
+  height: 110px;
+  background-color: #fbfe73;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.logo-principal {
+  width: 900px;
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.inicio p {
+  color: #fbfe73;
+  font-size: 21px;
+  margin: 30px 0;
+}
+
+.boton-principal {
+  background-color: #ecff0b;
+  color: #a82e5f;
+  text-decoration: none;
+
+  padding: 14px 28px;
+  border-radius: 30px;
+
+  font-weight: 700;
+}

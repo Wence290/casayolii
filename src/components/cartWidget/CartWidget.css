@@ -1,0 +1,30 @@
+.cart-widget {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #ffff62;
+  text-decoration: none;
+
+  font-weight: 700;
+}
+
+.cart-icon {
+  font-size: 22px;
+}
+
+.cart-count {
+  background-color: #ffff62;
+  color: #b52d61;
+
+  min-width: 22px;
+  height: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+}

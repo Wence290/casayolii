@@ -1,0 +1,44 @@
+.ubicacion {
+  min-height: 70vh;
+  background-color: #b52d61;
+  color: #ffff62;
+
+  padding: 100px 8%;
+
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 70px;
+  align-items: center;
+}
+.ubicacion h2 {
+  font-size: clamp(45px, 6vw, 75px);
+  margin: 10px 0 25px;
+}
+
+.ubicacion p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.direccion {
+  font-weight: bold;
+  font-size: 22px !important;
+}
+
+.mapa {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mapa iframe {
+  width: 600px !important;
+  height: 400px !important;
+
+  border: none;
+  border-radius: 25px;
+
+  display: block;
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}

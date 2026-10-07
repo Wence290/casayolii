@@ -1,0 +1,446 @@
+.hyt {
+  background-color: #ffff62;
+  color: #b52d61;
+  padding: 100px 8%;
+}
+
+.hyt-contenido {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.hyt .etiqueta {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.hyt h2 {
+  font-size: clamp(45px, 6vw, 75px);
+  line-height: 1;
+  margin: 0 0 25px;
+}
+
+.hyt-descripcion {
+  font-size: 19px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-bottom: 45px;
+}
+
+/* GRID PRINCIPAL */
+
+.hyt-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: start;
+}
+
+/* CALENDARIO */
+
+.hyt-calendario {
+  width: 100%;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 520px;
+
+  background-color: #f7f3eb;
+  color: #b52d61;
+
+  border: none;
+  border-radius: 25px;
+
+  padding: 25px;
+
+  font-family: inherit;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Navegación del calendario */
+
+.react-calendar__navigation {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+
+  color: #b52d61;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.react-calendar__navigation button:hover {
+  background-color: rgba(181, 45, 97, 0.08);
+  border-radius: 10px;
+}
+
+/* Días de la semana */
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: bold;
+
+  color: #b52d61;
+
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__weekdays abbr {
+  text-decoration: none;
+}
+
+/* Días */
+
+.react-calendar__tile {
+  padding: 14px 8px;
+
+  background: none;
+  border: none;
+
+  color: #b52d61;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.react-calendar__tile:hover {
+  background-color: rgba(181, 45, 97, 0.12);
+  transform: scale(1.04);
+}
+
+/* Día actual */
+
+.react-calendar__tile--now {
+  background-color: #f3c9d9;
+  color: #b52d61;
+}
+
+/* Día seleccionado */
+
+.react-calendar__tile--active {
+  background-color: #b52d61 !important;
+  color: #ffff62 !important;
+}
+
+/* Días de otros meses */
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  opacity: 0.4;
+}
+
+/* TURNOS */
+
+.hyt-turnos {
+  background-color: #b52d61;
+  color: #ffff62;
+
+  padding: 30px;
+
+  border-radius: 25px;
+
+  min-height: 250px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.hyt-turnos h3 {
+  text-transform: capitalize;
+
+  font-size: 27px;
+
+  margin: 0 0 25px;
+}
+
+/* CARD DE CADA TURNO */
+
+.turno-card {
+  background-color: #ffff62;
+  color: #b52d61;
+
+  padding: 22px 24px;
+
+  border-radius: 20px;
+
+  margin-bottom: 18px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.turno-card h4 {
+  font-size: 23px;
+  margin: 0 0 7px;
+}
+
+.turno-card p {
+  margin: 0 0 8px;
+  font-size: 16px;
+}
+
+.turno-card span {
+  display: block;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* BOTÓN RESERVAR */
+
+.turno-card button {
+  background-color: #b52d61;
+  color: #ffff62;
+
+  border: none;
+  border-radius: 25px;
+
+  padding: 12px 24px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.turno-card button:hover {
+  transform: scale(1.05);
+}
+
+.turno-card button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* DÍA SIN CLASES */
+
+.sin-clases {
+  background-color: #ffff62;
+  color: #b52d61;
+
+  padding: 25px;
+
+  border-radius: 20px;
+
+  text-align: center;
+}
+
+.sin-clases p {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* FORMULARIO OVERLAY */
+
+.formulario-overlay {
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  z-index: 1000;
+}
+
+/* FORMULARIO */
+
+.formulario-reserva {
+  position: relative;
+
+  background-color: #f7f3eb;
+  color: #b52d61;
+
+  width: 100%;
+  max-width: 520px;
+
+  padding: 40px;
+
+  border-radius: 30px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.cerrar-formulario {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+
+  background: none;
+  border: none;
+
+  color: #b52d61;
+
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.form-etiqueta {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.formulario-reserva h3 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.formulario-reserva form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulario-reserva label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  font-weight: bold;
+}
+
+.formulario-reserva input,
+.formulario-reserva select {
+  padding: 13px 15px;
+
+  border: 2px solid #b52d61;
+  border-radius: 12px;
+
+  background-color: white;
+
+  color: #b52d61;
+
+  font-family: inherit;
+  font-size: 16px;
+
+  outline: none;
+}
+
+.formulario-reserva input:focus,
+.formulario-reserva select:focus {
+  box-shadow: 0 0 0 3px rgba(181, 45, 97, 0.15);
+}
+
+/* BOTÓN CONFIRMAR */
+
+.btn-confirmar {
+  margin-top: 10px;
+
+  padding: 15px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #b52d61;
+  color: #ffff62;
+
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease;
+}
+
+.btn-confirmar:hover {
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .hyt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .react-calendar {
+    max-width: 100%;
+  }
+
+  .hyt-turnos {
+    width: 100%;
+  }
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+  .hyt {
+    padding: 70px 6%;
+  }
+
+  .hyt h2 {
+    font-size: 42px;
+  }
+
+  .hyt-descripcion {
+    font-size: 17px;
+  }
+
+  .react-calendar {
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .react-calendar__tile {
+    padding: 11px 5px;
+    font-size: 14px;
+  }
+
+  .hyt-turnos {
+    padding: 22px;
+  }
+
+  .hyt-turnos h3 {
+    font-size: 23px;
+  }
+
+  .turno-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+  }
+
+  .turno-card button {
+    width: 100%;
+  }
+
+  .formulario-reserva {
+    padding: 35px 25px;
+  }
+}

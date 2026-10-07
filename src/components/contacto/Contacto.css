@@ -1,0 +1,65 @@
+.contacto {
+  min-height: 65vh;
+  background-color: #fbfe73;
+  color: #a82e5f;
+
+  padding: 100px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: clamp(50px, 7vw, 85px);
+  margin: 10px 0 20px;
+}
+
+.contacto-texto {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.contacto-links {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contacto-links {
+  margin-top: 40px;
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.contacto-links a {
+  width: 70px;
+  height: 70px;
+
+  border: 2px solid #a82e5f;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #a82e5f;
+  text-decoration: none;
+  font-size: 35px;
+
+  transition: 0.2s;
+}
+
+.contacto-links a:hover {
+  background-color: #a82e5f;
+  color: #fbfe73;
+  transform: translateY(-3px);
+}

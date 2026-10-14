@@ -1,7 +1,7 @@
+
 import "./Header.css";
 import logoCasayoli from "../../assets/logo-casayoli.png";
 import { Link } from "react-router-dom";
-import CartWidget from "../cartWidget/CartWidget.jsx";
 
 function Header() {
   return (
@@ -12,8 +12,9 @@ function Header() {
 
       <nav className="nav">
         <Link to="/">Inicio</Link>
-        <Link to="/productos">Productos</Link>
-        <CartWidget />
+        <a href="/#contacto">Contacto</a>
+        <a href="/#ubicacion">Ubicación</a>
+        <a href="/#hyt">HYT</a>
       </nav>
     </header>
   );

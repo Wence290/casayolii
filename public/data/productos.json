@@ -5,7 +5,8 @@
     "precio": 18000,
     "descripcion": "Taza de cerámica hecha a mano, ideal para café o té.",
     "color": "Crema",
-    "imagen": "/productos/taza.jpg"
+    "imagen": "/productos/taza.jpg",
+    "stock": 10
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "precio": 22000,
     "descripcion": "Cuenco de cerámica esmaltada realizado de forma artesanal.",
     "color": "Bordó",
-    "imagen": "/productos/cuenco.jpg"
+    "imagen": "/productos/cuenco.jpg",
+    "stock": 8
   },
   {
     "id": 3,
@@ -21,6 +23,7 @@
     "precio": 25000,
     "descripcion": "Maceta artesanal de cerámica para interiores.",
     "color": "Terracota",
-    "imagen": "/productos/maceta.jpg"
+    "imagen": "/productos/maceta.jpg",
+    "stock": 5
   }
 ]

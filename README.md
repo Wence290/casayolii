@@ -1,16 +1,58 @@
-# React + Vite
+# Casa Yoli | Taller de Cerámica
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Casa Yoli es una aplicación web desarrollada con React para un taller de cerámica artesanal ubicado en Palermo, Buenos Aires, Argentina.
 
-Currently, two official plugins are available:
+El proyecto combina una página institucional con un e-commerce y un panel de administración para la gestión y el alta de productos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Funcionalidades
 
-## React Compiler
+- Página institucional.
+- Catálogo dinámico de productos.
+- Vista individual de cada producto.
+- Selector de cantidades y control de stock disponible.
+- Carrito de compras.
+- Simulación de finalización de compra.
+- Autenticación de administrador.
+- Rutas protegidas.
+- Formulario de alta y validación de productos.
+- Carga de imágenes mediante ImgBB.
+- Diseño responsive.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React JS
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+- React Router DOM
+- Context API
+- Cloud Firestore
+- Firebase Authentication
+- ImgBB API
+- React Icons
+- React Calendar
+- Git y GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Instalación local
+
+1. Clonar el repositorio.
+2. Instalar las dependencias con `npm install`.
+3. Crear un archivo `.env.local` y configurar la variable `VITE_IMGBB_API_KEY`.
+4. Ejecutar `npm run dev`.
+
+## Panel de administración
+
+El panel administrativo se encuentra disponible mediante la ruta `/admin`.
+
+Para acceder es necesario iniciar sesión con una cuenta de administrador autorizada.
+
+## Acerca del proyecto
+
+Proyecto desarrollado como entrega final del curso de React JS, aplicando los conocimientos adquiridos durante las clases.
+
+La plataforma tiene fines académicos. Las compras son simuladas y no generan transacciones económicas reales.
+
+## Desarrollado por
+
+Wenceslao Guarnes
